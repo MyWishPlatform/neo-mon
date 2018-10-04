@@ -289,12 +289,6 @@
                         if (site.port) {
                             url += ':' + site.port;
                         }
-                        else if (site.protocol === 'http') {
-                            url += (inst.name === 'MainNet') ? ':10332' : ':20332';
-                        }
-                        else {
-                            url += (inst.name === 'MainNet') ? ':10331' : ':20331';
-                        }
                     }
                     httpService = neo.node({ baseUrl: url, monitorLatency: true});
                 }

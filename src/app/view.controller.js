@@ -16,18 +16,15 @@
         var cacheNetworkStats = {};
 
         vm.networkList = {
-            mainnet: {
-                label: 'MainNet'
-            },
             testnet: {
-                label: 'TestNet'
+                label: 'MyWish Testnet'
             }
         };
 
         vm.changeNetwork = changeNetwork;
-        vm.currentNetwork = 'MainNet';
+        vm.currentNetwork = 'TestNet';
 
-        changeNetwork('mainnet');
+        changeNetwork('testnet');
 
         function loadConfiguration (id) {
 

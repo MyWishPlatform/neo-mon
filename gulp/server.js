@@ -34,7 +34,9 @@ function browserSyncInit (baseDir, browser) {
         startPath: '/',
         server: server,
         browser: browser,
-        https: false
+        https: false,
+        open: false,
+        port: 4010
     });
 }
 
